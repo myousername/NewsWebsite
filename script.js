@@ -1,9 +1,6 @@
 const mobileMenu = document.getElementById('mobile-menu');
 const hamburgerIcon = document.getElementById('hamburger-icon');
 
-hamburgerIcon.addEventListener('mousedown', toggleMobileMenu, false);
-hamburgerIcon.addEventListener('touchstart', toggleMobileMenu, false);
-
 let animateMenuKeyframes = new KeyframeEffect(
   mobileMenu, 
   [
@@ -24,8 +21,8 @@ let reverseAnimateMenuKeyframes = new KeyframeEffect(
   { duration: 400 }
 );
 
-var mobileMenuAnimation = new Animation(animateMenuKeyframes);
-var reverseMobileMenuAnimation = new Animation(reverseAnimateMenuKeyframes);
+let mobileMenuAnimation = new Animation(animateMenuKeyframes);
+let reverseMobileMenuAnimation = new Animation(reverseAnimateMenuKeyframes);
 
 
 
